@@ -262,7 +262,7 @@ if __name__ == "__main__":
             curr =datetime.datetime.now()
             mins = curr.minute
             hours = curr.hour
-            while(hours <= 9 and mins < 2):
+            while(hours <= 9 and (mins < 2 or mins > 57)):
                 curr =datetime.datetime.now()
                 hours = curr.hour
                 mins = curr.minute
