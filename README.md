@@ -3,8 +3,7 @@ badmintonBooking
 
 For Realsil badminton booking
 
-Need httplib2
-Httplib2: https://code.google.com/p/httplib2/
+Requirements:  httplib2  -->  Httplib2: https://code.google.com/p/httplib2/
 
 
 TODO:
