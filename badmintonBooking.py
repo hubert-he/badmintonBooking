@@ -52,15 +52,15 @@ def checkBookingOK(str):
     p = re.compile(Booked_OK)
     a = p.search(str)
     if a:
-        return 0
+        return 0 #"一人一天最多预定1小时"
     p = re.compile(Booked_Warning)
     a = p.search(str)
     if a:
-        return 1
+        return 1 #该时间段已经被预定
     p = re.compile(Time_Overflow)
     a = p.search(str)
     if a:
-        return 2
+        return 2 #一人一周最多预定4小时
     return -1
 
 def Booking(http, path, header_list, body_list, log_msg):
